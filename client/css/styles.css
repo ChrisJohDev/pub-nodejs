@@ -1,0 +1,158 @@
+
+/* Element specific styles */
+body {
+    background: radial-gradient(rgb(0,0,128,0),slategray, paleturquoise,rgb(0,0,128,0.5),slategray, paleturquoise, rgb(0,0,128,1));
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: navy;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0px;
+    border: 3px solid green;
+}
+footer{
+    height: auto;
+}
+main{
+    max-height: 70vh;
+    min-height: 50vh;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    height: auto;
+}
+td{
+    padding: 5px;
+    margin: 10px;
+}
+th{
+    text-transform: capitalize;
+    padding: 5px;
+    margin: 15px;
+}
+tr{
+    margin: 0 20 0 20;
+}
+
+
+/* Class related styles */
+.align_right {
+    text-align: right;
+}
+.align_left {
+    text-align: left;
+}
+.align_center {
+    text-align: center;
+}
+.copyright_class {
+    text-align: center;
+    font-size: 0.7em;
+    color: navy;
+    padding-top: 20px;
+    padding-bottom: 3px;
+}
+.customer_table{
+    border: 5px ridge darkslategrey;
+    border-radius: 12px;
+    background: turquoise;
+    opacity: 55%;
+animation: xborder 5s infinite;
+    /*border-collapse: collapse;*/
+
+}
+.customer_table tr:nth-child(even){
+    background-color: rgb(138, 221, 221);
+}
+.math_result{
+    font-size: 22px;
+}
+.page_selector table{
+    border: 5px ridge darkslategrey;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top:25px;
+    background: linear-gradient(rgb(64,224,208,0),rgb(64,224,208,1),rgb(64,224,208,0));
+    opacity:45%;
+    color: navy;
+
+}
+
+/* CSS functions */
+@keyframes xborder {
+    50% {border: 15px ridge darkslategrey;}
+  }
+
+/*
+.content_holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.data_entry{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 30px;
+}
+.data_entry button, h3{
+    display: inline;
+}
+
+
+.data_entry button{
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background: darkturquoise;
+    border: 3px ridge navy;
+}
+.data_entry_items table{
+    border-collapse: collapse;
+    border: 0px;
+    padding: 5px;
+}
+.list_table tr:nth-child(even){
+    background-color: rgb(1, 195, 176);
+    opacity: 75%;
+    max-width: 600px;
+}
+
+.data_input label{
+text-transform: capitalize;
+}
+.data_input {
+border: 3px ridge slategrey;
+padding: 10px;
+}
+.table_head{
+    background-color: slategrey;
+    opacity: 75%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+
+
+.selection_panel{
+    margin-right: 30px;
+    padding: 5px;
+    text-align: left;
+    background: radial-gradient(slategrey, darkturquoise);
+    max-width: 300px;
+    border-radius: 20px;
+}
+.selection_panel th{
+    text-align: center;
+}
+.selection_option{
+    padding: 5px;
+}
+*/

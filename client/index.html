@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slutprov Nodejs (CJ)</title>
+    <link rel="shortcut icon" type="image/ico" href="./favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="./controller/controller.js"></script>
+    <script src="./model/model.js"></script>
+    <script src="./view/view.js"></script>
+    <script src="./js/simple-helper.js"></script>
+    <script>
+        var Current = {};
+        const Controller = new ClientController();
+        const Model = new ClientModel();
+        const View = new ClientView();
+
+        document.addEventListener('DOMContentLoaded', function () {
+            Controller.init();
+        });
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav_holder">
+            <div class="nav_item" style="display: inline"><img src="./graphics/D4M-Logo PNG-8.png" width="80px"
+                    height="50px" /></div>
+            <div class="nav_item" style="display: inline"><img
+                    src="./graphics/Blue - Data4Mat-Name-Only-500x100px-PNG-8.png" width="250px" height="50px" /></div>
+        </div>
+        <div class="page_selector">
+            <form>
+                <table>
+                    <tr>
+                        <td><input type="radio" class="radio_select" name="select_view" value="list"
+                                checked="checked" /></td>
+                        <td>Customer List</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" class="radio_select" name="select_view" value="math" /></td>
+                        <td>Use Math Add</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </nav>
+    <main>
+        <section class="section">
+            <div class="container">
+                <div id="customer_page" class="page" style="display: block;">customer</div>
+                <div id="math_page" class="page" style="display: none;">math</div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="copyright_class">Copyright &copy; 2020<br>Chris Johanneson</p>
+        </div>
+    </footer>
+</body>
+
+</html>
